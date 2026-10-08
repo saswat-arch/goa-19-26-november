@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Goa, 19–26 November 2026</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    color: #1c1916;
+    background: #fff;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+  h1, h2, h3, .kicker, .stat b, th, .day h3, .place {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 26pt; line-height: 1.05; margin: 0 0 6px; font-weight: 650; letter-spacing: -0.03em; }
+  h2 { font-size: 14pt; margin: 22px 0 8px; font-weight: 650; letter-spacing: -0.02em; page-break-after: avoid; }
+  h3 { font-size: 11pt; margin: 0 0 4px; font-weight: 650; }
+  p { margin: 0 0 8px; }
+  .kicker { font-size: 9pt; letter-spacing: 0.14em; text-transform: uppercase; color: #8a5a32; margin: 0 0 8px; }
+  .lede { font-size: 12pt; margin: 0 0 14px; }
+  .muted { color: #5c564e; }
+  .small { font-size: 9pt; color: #5c564e; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 12px 0 14px; }
+  .stat { border-top: 2px solid #1c1916; padding-top: 6px; }
+  .stat b { display: block; font-size: 12pt; font-weight: 650; }
+  .stat span { font-size: 8.5pt; color: #5c564e; }
+  .note {
+    background: #f6f1e8;
+    border-left: 3px solid #8a5a32;
+    padding: 8px 12px;
+    margin: 10px 0 14px;
+    page-break-inside: avoid;
+  }
+  .map-wrap { display: grid; grid-template-columns: 250px 1fr; gap: 16px; align-items: start; page-break-inside: avoid; }
+  svg.coast { width: 100%; height: auto; background: #e7eef1; }
+  table { width: 100%; border-collapse: collapse; margin: 6px 0 8px; page-break-inside: avoid; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e4ddd2; font-size: 9.5pt; }
+  th { font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; color: #5c564e; font-weight: 650; }
+  td.when { white-space: nowrap; font-family: "Avenir Next", Helvetica, Arial, sans-serif; font-weight: 650; width: 78px; }
+  .day { page-break-inside: avoid; margin: 0 0 12px; padding-top: 8px; border-top: 1px solid #e4ddd2; }
+  .day .meta { font-family: "Avenir Next", Helvetica, Arial, sans-serif; font-size: 8.5pt; letter-spacing: 0.08em; text-transform: uppercase; color: #8a5a32; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card { border: 1px solid #e4ddd2; padding: 10px 12px; page-break-inside: avoid; }
+  .card .place { font-size: 12pt; margin-bottom: 4px; }
+  ul { margin: 4px 0 8px; padding-left: 18px; }
+  li { margin: 0 0 3px; }
+  .total td { font-weight: 650; border-bottom: 2px solid #1c1916; }
+  a { color: #1c1916; }
+  .footer { margin-top: 16px; font-size: 8.5pt; color: #5c564e; }
+  .daypage { page-break-before: always; }
+  .daynav { margin: 0 0 8px; }
+  .daynav a {
+    display: inline-block;
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    text-decoration: none;
+    border: 1px solid #1c1916;
+    color: #1c1916;
+    padding: 4px 7px;
+    margin: 0 4px 4px 0;
+  }
+  .daynav a.on { background: #1c1916; color: #fff; }
+  .inset { border: 1px solid #e4ddd2; padding: 8px 10px; margin-top: 8px; }
+  .stop { margin: 0 0 6px; font-size: 10pt; }
+  .stop b { font-family: "Avenir Next", Helvetica, Arial, sans-serif; }
+  h2.break { page-break-before: always; }
+  @media screen {
+    body { max-width: 920px; margin: 0 auto; padding: 28px 20px 72px; background: #f4efe6; }
+    .daypage[hidden] { display: none; }
+    .daypage .daynav { display: none; }
+  }
+  @media screen and (max-width: 720px) {
+    .map-wrap, .stats, .two { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <p class="kicker">Live page · share this link</p>
+  <h1>Goa, 19–26 November 2026</h1>
+  <p class="lede">Nine people. Four couples and one single. North to south. Three nights in Vagator, four nights on Agonda. Cabs are booked in Goa, ride by ride. Nothing in this sheet has been paid.</p>
+
+  <div class="stats">
+    <div class="stat"><b>9 people</b><span>5 private rooms. No dorms.</span></div>
+    <div class="stat"><b>Mopa in</b><span>Dabolim out. North, then south.</span></div>
+    <div class="stat"><b>1:22 pm</b><span>Friday low tide at the cave.</span></div>
+    <div class="stat"><b>Cabs there</b><span>Book each ride in Goa.</span></div>
+  </div>
+
+  <div class="note">
+    Land at Mopa (GOX) on the 19th, about 45–60 minutes from the cottages. Fly out of Dabolim (GOI) on the 26th, about 2 hours from Agonda. A return ticket out of Mopa flips the week. Land by about 3:30 pm on the 19th so sunset at Noah still works. Book cabs locally for each outing.
+  </div>
+
+  <h2>Daily map</h2>
+  <p>Tap a day. Each button opens that day’s route. North is up and the sea is on the left. Sunset is 6:01 pm. Be in a photo spot by 5:15 pm.</p>
+  <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+  <p class="small">The brown line on each map is that day only. Grey dots are the other stops, left in place so the coast stays familiar.</p>
+
+
+  <section class="daypage" id="day-19">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19" class="on">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Thursday 19 · The Village, Vagator</p>
+    <h2>Land, then Noah</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Thursday 19 · The Village, Vagator">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<circle cx="325" cy="574" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="201,28 77,140" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="201" cy="28" r="8" fill="#8a5a32"/>
+<text x="201" y="31.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="213" y="31" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Mopa</text>
+<circle cx="77" cy="140" r="8" fill="#8a5a32"/>
+<text x="77" y="143.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="89" y="143" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">The Village</text>
+</svg>
+        <div class="inset">
+          <p class="meta">Ozran cliff, Thursday evening</p>
+          <p>Close-up, not the same scale as the coast. Stop 2 is The Village. Stop 3 is Noah, a 400 metre walk along the cliff.</p>
+        </div>
+      </div>
+      <div>
+        <p>Cab from Mopa, 45–60 minutes. Noah is a 400 metre walk from the cottages, so it is called out under the map instead of a second dot.</p>
+        <p class="stop"><b>1. Mopa airport, landing</b> One cab for the group. Land by about 3:30 pm to make sunset.</p><p class="stop"><b>2. The Village, check in</b> Drop the bags.</p><p class="stop"><b>3. Noah, 5:15 pm</b> Cliff tables. Sunset is 6:01 pm. Walk back after.</p>
+        <p>Cover is often about ₹1,800–2,000 a person, redeemable on food and drinks. Plan about ₹40,000–65,000 for nine. Book a table at noahgoa.co.in or +91 80071 00033.</p>
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-20">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20" class="on">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Friday 20 · The Village, Vagator</p>
+    <h2>Wake park, then the cave</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Friday 20 · The Village, Vagator">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<circle cx="325" cy="574" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="77,140 60,73 31,57 77,140" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="77" cy="140" r="8" fill="#8a5a32"/>
+<text x="77" y="143.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="89" y="143" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">The Village</text>
+<circle cx="60" cy="73" r="8" fill="#8a5a32"/>
+<text x="60" y="76.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="72" y="76" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Wake park</text>
+<circle cx="31" cy="57" r="8" fill="#8a5a32"/>
+<text x="31" y="60.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">3</text>
+<text x="43" y="60" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Querim cave</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>Leave at 7:15 am. Vagator to the wake park is 35–50 minutes, then 20–30 minutes on to Querim. Early night.</p>
+        <p class="stop"><b>1. The Village, 7:15 am</b> Leave Vagator.</p><p class="stop"><b>2. Wake park, 8:00 and 10:00</b> Five riders, then four. Done by 11:30.</p><p class="stop"><b>3. Querim cave, 12:30–2:30 pm</b> Low tide is 1:22 pm at 0.6 m. Off the rocks by 2:30.</p><p class="stop"><b>4. The Village, evening</b> About an hour back.</p>
+        <table>
+      <thead><tr><th>Time</th><th>Who</th><th>What</th></tr></thead>
+      <tbody>
+        <tr><td class="when">7:15 am</td><td>All 9</td><td>Leave Vagator. 35–50 minutes to Om Lake.</td></tr>
+        <tr><td class="when">8:00 am</td><td>5 people</td><td>First beginner wave. About 90 minutes.</td></tr>
+        <tr><td class="when">10:00 am</td><td>4 people</td><td>Second wave. The first five eat at an Arambol shack.</td></tr>
+        <tr><td class="when">11:30 am</td><td>All 9</td><td>Done. 20–30 minutes north to Querim.</td></tr>
+        <tr><td class="when">12:30 pm</td><td>All 9</td><td>South end of Keri beach. Grip shoes.</td></tr>
+        <tr><td class="when">1:22 pm</td><td>Low tide</td><td>Cave-mouth photos. Ankle-deep reflections.</td></tr>
+        <tr><td class="when">2:30 pm</td><td>All 9</td><td>Off the rocks. Skip the cave if a red flag is up.</td></tr>
+        <tr><td class="when">Evening</td><td>All 9</td><td>About an hour back to the cottages.</td></tr>
+      </tbody>
+    </table>
+    <p class="small">Ask for two waves, not one slot of nine. WhatsApp +91 84462 46935. Couple rate is about ₹6,000 a pair plus ₹3,250 for the single, so about ₹27,250. Full price is about ₹29,250. Tide: tides4fishing, Vengurla, read 8 October 2026. Recheck on the night of the 19th. If that low is poor, move the cave to Saturday’s 2:02 pm low and do Aguada on Friday afternoon.</p>
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-21">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21" class="on">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Saturday 21 · The Village, Vagator</p>
+    <h2>Aguada, then the market</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Saturday 21 · The Village, Vagator">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<circle cx="325" cy="574" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="77,140 113,223 104,170 77,140" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="77" cy="140" r="8" fill="#8a5a32"/>
+<text x="77" y="143.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="89" y="143" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">The Village</text>
+<circle cx="113" cy="223" r="8" fill="#8a5a32"/>
+<text x="113" y="226.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="125" y="226" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Aguada</text>
+<circle cx="104" cy="170" r="8" fill="#8a5a32"/>
+<text x="104" y="173.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">3</text>
+<text x="116" y="173" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Arpora market</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>Vagator to Aguada is 30–40 minutes. Arpora is on the way home.</p>
+        <p class="stop"><b>1. The Village, afternoon</b> Slow morning. Leave by 3:30 pm.</p><p class="stop"><b>2. Fort Aguada, 4:30 pm</b> About ₹25 cash. Lighthouse is extra. Sinquerim beach if the gate closes.</p><p class="stop"><b>3. Arpora market, 7:30 pm</b> Food for nine is about ₹10,000. Cab back.</p><p class="stop"><b>4. The Village, night</b> This is not a second club night.</p>
+        
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-22">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22" class="on">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Sunday 22 · Moving day</p>
+    <h2>Siridao, then Agonda</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Sunday 22 · Moving day">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="77,140 196,260 325,574" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="77" cy="140" r="8" fill="#8a5a32"/>
+<text x="77" y="143.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="89" y="143" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">The Village</text>
+<circle cx="196" cy="260" r="8" fill="#8a5a32"/>
+<text x="196" y="263.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="208" y="263" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Siridao</text>
+<circle cx="325" cy="574" r="8" fill="#8a5a32"/>
+<text x="325" y="577.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">3</text>
+<text x="337" y="577" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Agonda</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>Book cabs for the group and the bags. Vagator to Siridao is 55–75 minutes. Siridao to Agonda is 75–100 minutes after sunset.</p>
+        <p class="stop"><b>1. The Village, late morning</b> Check out.</p><p class="stop"><b>2. Siridao, 4:00 pm</b> Sunset on the rocks.</p><p class="stop"><b>3. Sonho do Mar, after dark</b> Check in at the garden huts.</p>
+        
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-23">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23" class="on">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Monday 23 · Sonho do Mar, Agonda</p>
+    <h2>Betul and back</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Monday 23 · Sonho do Mar, Agonda">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="77" cy="140" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="325,574 298,490 325,574" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="325" cy="574" r="8" fill="#8a5a32"/>
+<text x="325" y="577.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="337" y="577" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Agonda</text>
+<circle cx="298" cy="490" r="8" fill="#8a5a32"/>
+<text x="298" y="493.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="286" y="493" text-anchor="end" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Betul</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>Agonda to the jetty is 40–55 minutes. Same road home after sunset.</p>
+        <p class="stop"><b>1. Agonda, morning</b> Nothing planned before noon.</p><p class="stop"><b>2. Betul jetty, 4:30 pm</b> Fishing boats at sunset.</p><p class="stop"><b>3. Agonda, evening</b> Shack beer, then the huts.</p>
+        
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-24">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24" class="on">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Tuesday 24 · Sonho do Mar, Agonda</p>
+    <h2>Kakolem, then Cabo</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Tuesday 24 · Sonho do Mar, Agonda">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="77" cy="140" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="325,574 310,562 262,533 325,574" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="325" cy="574" r="8" fill="#8a5a32"/>
+<text x="325" y="577.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="337" y="577" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Agonda</text>
+<circle cx="310" cy="562" r="8" fill="#8a5a32"/>
+<text x="310" y="565.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="298" y="565" text-anchor="end" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Kakolem</text>
+<circle cx="262" cy="533" r="8" fill="#8a5a32"/>
+<text x="262" y="536.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">3</text>
+<text x="250" y="536" text-anchor="end" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Cabo de Rama</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>Agonda to Kakolem is 25–40 minutes. Cabo de Rama is the next cape north.</p>
+        <p class="stop"><b>1. Agonda, 8:00 am</b> Leave while the climb is cool.</p><p class="stop"><b>2. Kakolem, 9:15 am</b> Two groups on the stair, 10 minutes apart. Last person up by noon. No bar, weak signal, wade only.</p><p class="stop"><b>3. Cabo de Rama, 4:15 pm</b> Free. Ask to stay for sunset. Best frame of the week.</p><p class="stop"><b>4. Agonda, after dark</b> Book the return cab before the stair. Download offline maps.</p>
+        
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-25">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25" class="on">Wed 25</a><a href="#day-26">Thu 26</a></nav>
+    <p class="meta">Wednesday 25 · Sonho do Mar, Agonda</p>
+    <h2>Stay local</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Wednesday 25 · Sonho do Mar, Agonda">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="77" cy="140" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="171" cy="309" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<polyline points="325,574 363,597" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-dasharray="6 5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="325" cy="574" r="8" fill="#8a5a32"/>
+<text x="325" y="577.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="313" y="566" text-anchor="end" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Agonda</text>
+<circle cx="363" cy="597" r="8" fill="#8a5a32"/>
+<text x="363" y="600.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="351" y="612" text-anchor="end" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Palolem</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>No required drive. Palolem, the dashed line, is an optional 20 minutes south.</p>
+        <p class="stop"><b>1. Agonda, all day</b> Beach outside the huts. This day absorbs any delay.</p><p class="stop"><b>2. Palolem, optional</b> Kayak or a shack with music.</p>
+        
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="daypage" id="day-26">
+    <nav class="daynav" aria-label="Choose a day"><a href="#day-19">Thu 19</a><a href="#day-20">Fri 20</a><a href="#day-21">Sat 21</a><a href="#day-22">Sun 22</a><a href="#day-23">Mon 23</a><a href="#day-24">Tue 24</a><a href="#day-25">Wed 25</a><a href="#day-26" class="on">Thu 26</a></nav>
+    <p class="meta">Thursday 26 · Fly from Dabolim</p>
+    <h2>Cabs to the airport</h2>
+    <div class="map-wrap">
+      <div>
+        <svg class="coast" viewBox="0 0 420 620" role="img" aria-label="Thursday 26 · Fly from Dabolim">
+<polygon points="40,15.5 30,54.2 50,93 73,139.5 80,178.2 108,217 140,248 200,263.5 140,310 220,387.5 280,465 290,511.5 260,534.7 315,565.7 370,596.7 390,612.2 412,612.2 412,15.5" fill="#f7f3ea" stroke="#1c1916" stroke-width="1.2"/>
+<text x="12" y="18" fill="#5c564e" font-size="10" font-family="Helvetica, Arial, sans-serif">Arabian Sea</text>
+<circle cx="201" cy="28" r="2.4" fill="#b7aea3"/>
+<circle cx="31" cy="57" r="2.4" fill="#b7aea3"/>
+<circle cx="60" cy="73" r="2.4" fill="#b7aea3"/>
+<circle cx="77" cy="140" r="2.4" fill="#b7aea3"/>
+<circle cx="104" cy="170" r="2.4" fill="#b7aea3"/>
+<circle cx="113" cy="223" r="2.4" fill="#b7aea3"/>
+<circle cx="196" cy="260" r="2.4" fill="#b7aea3"/>
+<circle cx="298" cy="490" r="2.4" fill="#b7aea3"/>
+<circle cx="262" cy="533" r="2.4" fill="#b7aea3"/>
+<circle cx="310" cy="562" r="2.4" fill="#b7aea3"/>
+<circle cx="363" cy="597" r="2.4" fill="#b7aea3"/>
+<polyline points="325,574 171,309" fill="none" stroke="#8a5a32" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="325" cy="574" r="8" fill="#8a5a32"/>
+<text x="325" y="577.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">1</text>
+<text x="337" y="577" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Agonda</text>
+<circle cx="171" cy="309" r="8" fill="#8a5a32"/>
+<text x="171" y="312.5" text-anchor="middle" fill="#fff" font-size="10" font-family="Helvetica, Arial, sans-serif" font-weight="700">2</text>
+<text x="183" y="312" text-anchor="start" fill="#1c1916" font-size="10" font-family="Helvetica, Arial, sans-serif">Dabolim</text>
+</svg>
+        
+      </div>
+      <div>
+        <p>Agonda to Dabolim is 1 hour 45 minutes to 2 hours 15 minutes. Book cabs for all nine.</p>
+        <p class="stop"><b>1. Agonda, morning</b> Check out of Sonho do Mar.</p><p class="stop"><b>2. Dabolim, departure</b> Leave 3 hours before a domestic flight, plus the drive.</p>
+        
+        <p class="small">North is up. The sea is on the left. The line is this day’s order, not the exact road. Tap another day above to open that route.</p>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="break">Where you sleep</h2>
+  <p>Five private rooms: four doubles and one single. Couples do not take dorm beds.</p>
+  <div class="two">
+    <div class="card">
+      <div class="place">The Village, Vagator</div>
+      <p class="small">19–22 November · 3 nights</p>
+      <p>Ten wooden cottages. Site floors are ₹3,000, ₹4,000, and ₹5,000. Five lower cottages are the target, about ₹45,000–75,000. November will be above that floor.</p>
+      <p class="small">584/1 Vailo Waddo, near Ozran. +91 77570 50316. thevillagegoa.com/rooms</p>
+    </div>
+    <div class="card">
+      <div class="place">Sonho do Mar, garden huts</div>
+      <p class="small">22–26 November · 4 nights</p>
+      <p>Garden huts about 15 metres back from the sand, not the beachfront row. Five huts are about ₹60,000–1.0 lakh until they quote these dates.</p>
+      <p class="small">House 275A, north end of Agonda. +91 94201 62460. sonho-do-mar.de</p>
+    </div>
+  </div>
+
+  <h2>If five rooms are not free</h2>
+  <table>
+    <thead><tr><th>Hotel</th><th>Use it if</th><th>Expect</th></tr></thead>
+    <tbody>
+      <tr><td>Famafa, Arambol</td><td>The Village says no</td><td>Sweet Lake Lane, about 22 rooms, often ₹2,400–4,500. Closer to the cave. Saturday market is a longer drive.</td></tr>
+      <tr><td>Om Ganesh Naik, Arambol</td><td>You want the cheapest private rooms</td><td>Doubles about $15–20 through 15 December. Confirm five rooms exist.</td></tr>
+      <tr><td>Om Sai, Agonda</td><td>Sonho says no</td><td>Garden huts ₹4,900 plus GST, 1 Oct–20 Dec 2026. Sea view is ₹6,500. H.no 269-A, Dovolkazon.</td></tr>
+      <tr><td>Fatima’s, Agonda</td><td>You want the road across from the sand</td><td>About ₹2,300–2,600. An old ₹900 card is not a November rate. +91 81919 00086.</td></tr>
+      <tr><td>Cuba Agonda</td><td>You want a named hut with air conditioning</td><td>Partial sea view last seen about ₹4,700. Full sea-facing about ₹6,300.</td></tr>
+    </tbody>
+  </table>
+  <p class="small">La Cabana, Tan N Sand, Nyasta Valley, and The Rose are about ₹8,000–15,000 a room. Riva standard rooms, from about ₹6,100, are the step up if these are full. Odyssey in Saligao is one bedroom and sleeps four, so it cannot hold this group.</p>
+
+  <h2>Rough ranges</h2>
+  <p>Each line is an approximate range for that piece. Cabs are extra and booked locally. Flights are extra, often ₹8,000–20,000 a person from a big Indian city if booked in October.</p>
+  <table>
+    <thead><tr><th>Piece</th><th>Approximate range</th></tr></thead>
+    <tbody>
+      <tr><td>The Village, 5 cottages, 3 nights</td><td>₹45,000–75,000</td></tr>
+      <tr><td>Sonho garden huts, 5 huts, 4 nights</td><td>₹60,000–1.0 lakh</td></tr>
+      <tr><td>Wake park, 9 beginners</td><td>₹27,250–29,250</td></tr>
+      <tr><td>Food, 8 days</td><td>₹70,000–90,000</td></tr>
+      <tr><td>Saturday market</td><td>About ₹10,000</td></tr>
+      <tr><td>Thursday at Noah, 9 people</td><td>₹40,000–65,000</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Room figures are floors and recent quotes, not holds. November at The Village will sit above the website floor.</p>
+
+  <h2>Photo clock</h2>
+  <table>
+    <thead><tr><th>Place</th><th>When</th><th>Frame</th></tr></thead>
+    <tbody>
+      <tr><td>Noah, Ozran</td><td>Thu 19, 5:15 pm</td><td>Sunset from the cliff tables.</td></tr>
+      <tr><td>Querim cave</td><td>Fri 20, 12:30–2:30</td><td>Cave mouth at the 1:22 pm low.</td></tr>
+      <tr><td>Aguada</td><td>Sat 21, 4:30–6:15</td><td>Lighthouse, west rampart, then Sinquerim.</td></tr>
+      <tr><td>Siridao</td><td>Sun 22, 4:00–6:15</td><td>Rocks and the far shore, on the moving day.</td></tr>
+      <tr><td>Betul</td><td>Mon 23, 4:30–6:15</td><td>Boats on the jetty.</td></tr>
+      <tr><td>Kakolem</td><td>Tue 24, from 8:30</td><td>Two groups on the stair. Up by noon.</td></tr>
+      <tr><td>Cabo de Rama</td><td>Tue 24, 4:15–6:10</td><td>Ramparts. Best frame of the week.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Still to book, in your own names</h2>
+  <table>
+    <thead><tr><th>Book</th><th>Ask for</th><th>Contact</th></tr></thead>
+    <tbody>
+      <tr><td>Flights</td><td>Nine seats. Mopa on 19 Nov, Dabolim on 26 Nov. Land by about 3:30 pm.</td><td>GOX in, GOI out</td></tr>
+      <tr><td>The Village</td><td>Five lower cottages, 19–22 November.</td><td>+91 77570 50316 · thevillagegoa.com/rooms</td></tr>
+      <tr><td>Sonho do Mar</td><td>Five garden huts, 22–26 November.</td><td>+91 94201 62460 · sonho-do-mar.de</td></tr>
+      <tr><td>101 Wake Park</td><td>Five at 8:00 and four at 10:00 on 20 November.</td><td>WhatsApp +91 84462 46935</td></tr>
+      <tr><td>Noah</td><td>Table for nine, 19 November, from 5:15 pm.</td><td>+91 80071 00033 · noahgoa.co.in</td></tr>
+      <tr><td>Cabs</td><td>Book in Goa, ride by ride. Nothing is held for the week.</td><td>Local cabs</td></tr>
+    </tbody>
+  </table>
+
+  <p class="footer">Prepared 9 October 2026. Rates and the Friday tide should be rechecked before anyone pays. South nights are shack beers at Sonho and Betul. Palolem on Wednesday is the optional music night, about 20 minutes from the huts.</p>
+  <script>
+    (function () {
+      var pages = Array.prototype.slice.call(document.querySelectorAll(".daypage"));
+      function show(id) {
+        if (!document.getElementById(id)) id = "day-19";
+        pages.forEach(function (page) { page.hidden = page.id !== id; });
+        document.querySelectorAll(".daynav a").forEach(function (link) {
+          link.classList.toggle("on", link.getAttribute("href") === "#" + id);
+        });
+      }
+      document.querySelectorAll(".daynav a").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          var id = link.getAttribute("href").slice(1);
+          show(id);
+          history.replaceState(null, "", "#" + id);
+        });
+      });
+      show((location.hash || "#day-19").replace("#", ""));
+    })();
+  </script>
+</body>
+</html>
